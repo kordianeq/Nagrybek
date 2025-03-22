@@ -65,6 +65,8 @@ public class LootBoxManager : MonoBehaviour
             if (timeBetweenOpenings > 0)
             {
                 canOpen = false;
+                uiManager.targetTime = 10f;
+                uiManager.timerStarted = true;
                 Invoke(nameof(CaseReset), timeBetweenOpenings);
             }
 
