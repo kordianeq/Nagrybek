@@ -6,19 +6,19 @@ using UnityEngine.UI;
 
 public class IdList : MonoBehaviour
 {
-    public List<GameObject> slotList;
+    public int panelIndex;
     private void Start()
     {
-        AssignSlots();
+        //AssignSlots();
     }
-    void AssignSlots()
+   public void AssignSlots()
     {
         int i = 0;  
         Transform parent = gameObject.transform;
         foreach(Transform child in parent)
         {
-            slotList.Add(child.gameObject);
             child.GetComponent<EqSlot>().slotIndex = i;
+            child.GetComponent<EqSlot>().panelIndex = panelIndex;
             i++;
         }
     }
