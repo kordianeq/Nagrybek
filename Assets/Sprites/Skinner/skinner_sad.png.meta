@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 76cea62c3a493a54d8b3d434cf02ec12
+guid: b56e6d5294c67c743abcd55ec064a271
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3996435508884897815
-    second: dfe9dd6-59f8bc21-0ca5-4eb3-b898-79acf9df1d8b_0
+      213: -8358071946175079330
+    second: skinner_sad_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dfe9dd6-59f8bc21-0ca5-4eb3-b898-79acf9df1d8b_0
+      name: skinner_sad_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1197
-        height: 1121
+        x: 237
+        y: 45
+        width: 1405
+        height: 979
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 71087dadbe0367730800000000000000
-      internalID: 3996435508884897815
+      spriteID: e5c931119d9220c80800000000000000
+      internalID: -8358071946175079330
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      dfe9dd6-59f8bc21-0ca5-4eb3-b898-79acf9df1d8b_0: 3996435508884897815
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

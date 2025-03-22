@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      microsoft-windows-xp-bliss-2048x1647_0: -6803894095050415074
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
