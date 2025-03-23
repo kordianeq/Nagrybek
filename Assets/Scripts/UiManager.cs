@@ -35,7 +35,7 @@ public class UiManager : MonoBehaviour
         if (timerStarted)
         {
             targetTime -= Time.deltaTime;
-            timerText.text = targetTime.ToString();
+            timerText.text = Mathf.Round(targetTime).ToString();
         }
         if (targetTime <= 0.0f)
         {

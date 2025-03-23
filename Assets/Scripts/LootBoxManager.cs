@@ -1,9 +1,19 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+using static UnityEditor.Progress;
 
 public class LootBoxManager : MonoBehaviour
 {
+    [SerializeField] boxAnimControll boxAnimControll;
+    [SerializeField] GameObject claimButton;
+
+    [SerializeField] Item skinner;
     UiManager uiManager;
+    [SerializeField] TextMeshProUGUI itemNameText;
+    [SerializeField] Image itemBg;
+    [SerializeField] List<Sprite> rarityImages;
     public Case newCase;
     bool canOpen;
     float timeBetweenOpenings;
@@ -31,12 +41,15 @@ public class LootBoxManager : MonoBehaviour
 
         if (canOpen)
         {
+            boxAnimControll.OpenBox();
+            claimButton.SetActive(true);
             if (caseOpened == 0)
             {
                 
                 newCase = GameObject.Find("Skinner").GetComponent<Case>();
                 Debug.Log("skinnerOpened");
-                uiManager.ActivateSkinner();
+                item = skinner;
+                
 
             }
             else if (specialCases[caseOpened] == E_unusualCases.Timer)
@@ -112,6 +125,37 @@ public class LootBoxManager : MonoBehaviour
 
     }
 
+    public void UnlockReward()
+    {
+       switch(item.type)
+        {
+            case E_ItemType.skinner:
+
+                uiManager.ActivateSkinner();
+                itemNameText.text = item.name;
+                
+                return;
+            case E_ItemType.normal:
+
+                itemNameText.text = item.name;
+                switch (item.rarity)
+                {
+                    case E_Rarity.common:
+                        itemBg.sprite = rarityImages[0];
+                        return;
+                    case E_Rarity.rare:
+                        itemBg.sprite = rarityImages[1];
+                        return;
+                    case E_Rarity.epic:
+                        itemBg.sprite = rarityImages[2];
+                        return;
+                    case E_Rarity.legendary:
+                        itemBg.sprite = rarityImages[3];
+                        return;
+                }
+                return;
+        }
+    }
     void CaseReset()
     {
         canOpen = true;
