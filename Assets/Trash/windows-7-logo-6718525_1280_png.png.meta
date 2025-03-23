@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      windows-7-logo-6718525_1280_png_0: -5124166543642656260
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
