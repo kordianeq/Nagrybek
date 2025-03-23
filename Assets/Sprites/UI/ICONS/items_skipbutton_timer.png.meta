@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      items_skipbutton_timer_0: -931159792448946362
+      items_skipbutton_timer_1: -5634668191829481649
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

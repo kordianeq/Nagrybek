@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      box_anim0195_0: 8463677215985081913
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
